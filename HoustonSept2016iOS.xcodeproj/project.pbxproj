@@ -13,6 +13,16 @@
 		1F32FEFA1D997AA300960D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F32FEF81D997AA300960D93 /* Main.storyboard */; };
 		1F32FEFC1D997AA300960D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F32FEFB1D997AA300960D93 /* Assets.xcassets */; };
 		1F32FEFF1D997AA300960D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F32FEFD1D997AA300960D93 /* LaunchScreen.storyboard */; };
+		1F60C0FC1DA3FA38009F41E9 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C0FB1DA3FA38009F41E9 /* Animal.m */; };
+		1F60C0FF1DA3FA60009F41E9 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C0FE1DA3FA60009F41E9 /* Cat.m */; };
+		1F60C1031DA3FA9F009F41E9 /* AnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C1021DA3FA9F009F41E9 /* AnimalViewController.m */; };
+		1F60C1061DA40195009F41E9 /* Birds.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C1051DA40195009F41E9 /* Birds.m */; };
+		1F60C1091DA4023E009F41E9 /* Pelican.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C1081DA4023E009F41E9 /* Pelican.m */; };
+		1F74F4761D9D638700794DF0 /* CollectionsFlowControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F74F4751D9D638700794DF0 /* CollectionsFlowControlViewController.m */; };
+		1F79A0571DA54A9F00EEA923 /* GroceriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F79A0561DA54A9F00EEA923 /* GroceriesViewController.m */; };
+		1FB40B131D9C14440083B1A9 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB40B121D9C14440083B1A9 /* Car.m */; };
+		1FB40B161D9C16700083B1A9 /* CARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB40B151D9C16700083B1A9 /* CARViewController.m */; };
+		1FB40B1B1D9C23250083B1A9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB40B1A1D9C23250083B1A9 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,26 @@
 		1F32FEFB1D997AA300960D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F32FEFE1D997AA300960D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F32FF001D997AA300960D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F60C0FA1DA3FA38009F41E9 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		1F60C0FB1DA3FA38009F41E9 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		1F60C0FD1DA3FA60009F41E9 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		1F60C0FE1DA3FA60009F41E9 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		1F60C1011DA3FA9F009F41E9 /* AnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalViewController.h; sourceTree = "<group>"; };
+		1F60C1021DA3FA9F009F41E9 /* AnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalViewController.m; sourceTree = "<group>"; };
+		1F60C1041DA40195009F41E9 /* Birds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Birds.h; sourceTree = "<group>"; };
+		1F60C1051DA40195009F41E9 /* Birds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Birds.m; sourceTree = "<group>"; };
+		1F60C1071DA4023E009F41E9 /* Pelican.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pelican.h; sourceTree = "<group>"; };
+		1F60C1081DA4023E009F41E9 /* Pelican.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pelican.m; sourceTree = "<group>"; };
+		1F74F4741D9D638700794DF0 /* CollectionsFlowControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsFlowControlViewController.h; sourceTree = "<group>"; };
+		1F74F4751D9D638700794DF0 /* CollectionsFlowControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsFlowControlViewController.m; sourceTree = "<group>"; };
+		1F79A0551DA54A9F00EEA923 /* GroceriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceriesViewController.h; sourceTree = "<group>"; };
+		1F79A0561DA54A9F00EEA923 /* GroceriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceriesViewController.m; sourceTree = "<group>"; };
+		1FB40B111D9C14440083B1A9 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		1FB40B121D9C14440083B1A9 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		1FB40B141D9C16700083B1A9 /* CARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CARViewController.h; sourceTree = "<group>"; };
+		1FB40B151D9C16700083B1A9 /* CARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CARViewController.m; sourceTree = "<group>"; };
+		1FB40B191D9C23250083B1A9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1FB40B1A1D9C23250083B1A9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 		1F32FEEE1D997AA300960D93 /* HoustonSept2016iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1F60C0D51DA2AEE5009F41E9 /* Week 2 */,
 				1F32FEF21D997AA300960D93 /* AppDelegate.h */,
 				1F32FEF31D997AA300960D93 /* AppDelegate.m */,
 				1F32FEF81D997AA300960D93 /* Main.storyboard */,
@@ -83,6 +114,8 @@
 		1F32FF061D998EAA00960D93 /* Week 1 */ = {
 			isa = PBXGroup;
 			children = (
+				1F74F4731D9D635400794DF0 /* Collections-Controlflow-Control */,
+				1FB40B101D9C13CB0083B1A9 /* Classes-Objects */,
 				1F32FF071D998EB600960D93 /* IBOutletAndActions */,
 			);
 			name = "Week 1";
@@ -93,6 +126,63 @@
 			children = (
 			);
 			name = IBOutletAndActions;
+			sourceTree = "<group>";
+		};
+		1F60C0D51DA2AEE5009F41E9 /* Week 2 */ = {
+			isa = PBXGroup;
+			children = (
+				1F79A0511DA5490100EEA923 /* TableViewCollectionView */,
+				1F60C0F91DA3FA12009F41E9 /* Delegates and Protocols */,
+			);
+			name = "Week 2";
+			sourceTree = "<group>";
+		};
+		1F60C0F91DA3FA12009F41E9 /* Delegates and Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1F60C0FA1DA3FA38009F41E9 /* Animal.h */,
+				1F60C0FB1DA3FA38009F41E9 /* Animal.m */,
+				1F60C0FD1DA3FA60009F41E9 /* Cat.h */,
+				1F60C0FE1DA3FA60009F41E9 /* Cat.m */,
+				1F60C1011DA3FA9F009F41E9 /* AnimalViewController.h */,
+				1F60C1021DA3FA9F009F41E9 /* AnimalViewController.m */,
+				1F60C1041DA40195009F41E9 /* Birds.h */,
+				1F60C1051DA40195009F41E9 /* Birds.m */,
+				1F60C1071DA4023E009F41E9 /* Pelican.h */,
+				1F60C1081DA4023E009F41E9 /* Pelican.m */,
+			);
+			name = "Delegates and Protocols";
+			sourceTree = "<group>";
+		};
+		1F74F4731D9D635400794DF0 /* Collections-Controlflow-Control */ = {
+			isa = PBXGroup;
+			children = (
+				1F74F4741D9D638700794DF0 /* CollectionsFlowControlViewController.h */,
+				1F74F4751D9D638700794DF0 /* CollectionsFlowControlViewController.m */,
+			);
+			name = "Collections-Controlflow-Control";
+			sourceTree = "<group>";
+		};
+		1F79A0511DA5490100EEA923 /* TableViewCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1F79A0551DA54A9F00EEA923 /* GroceriesViewController.h */,
+				1F79A0561DA54A9F00EEA923 /* GroceriesViewController.m */,
+			);
+			name = TableViewCollectionView;
+			sourceTree = "<group>";
+		};
+		1FB40B101D9C13CB0083B1A9 /* Classes-Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1FB40B191D9C23250083B1A9 /* Person.h */,
+				1FB40B1A1D9C23250083B1A9 /* Person.m */,
+				1FB40B111D9C14440083B1A9 /* Car.h */,
+				1FB40B121D9C14440083B1A9 /* Car.m */,
+				1FB40B141D9C16700083B1A9 /* CARViewController.h */,
+				1FB40B151D9C16700083B1A9 /* CARViewController.m */,
+			);
+			name = "Classes-Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F60C1091DA4023E009F41E9 /* Pelican.m in Sources */,
 				1F32FEF71D997AA300960D93 /* ViewController.m in Sources */,
+				1F60C1061DA40195009F41E9 /* Birds.m in Sources */,
+				1F79A0571DA54A9F00EEA923 /* GroceriesViewController.m in Sources */,
 				1F32FEF41D997AA300960D93 /* AppDelegate.m in Sources */,
+				1F60C1031DA3FA9F009F41E9 /* AnimalViewController.m in Sources */,
+				1FB40B161D9C16700083B1A9 /* CARViewController.m in Sources */,
+				1F60C0FF1DA3FA60009F41E9 /* Cat.m in Sources */,
+				1FB40B1B1D9C23250083B1A9 /* Person.m in Sources */,
+				1FB40B131D9C14440083B1A9 /* Car.m in Sources */,
+				1F60C0FC1DA3FA38009F41E9 /* Animal.m in Sources */,
 				1F32FEF11D997AA300960D93 /* main.m in Sources */,
+				1F74F4761D9D638700794DF0 /* CollectionsFlowControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +425,7 @@
 				1F32FF051D997AA300960D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
