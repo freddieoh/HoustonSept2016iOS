@@ -16,31 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        
+    //Unarchive NSUserDefaults here
     
-    // Creating objects(store and store number)
-   
-    Store *nike =[[Store alloc]init];
-    nike.storeName = @"Nike";
-    nike.storeNumber = @"1964";
-    nike.itemAdded = [NSMutableArray array];
+    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"storeList"];
     
-    Store *adidas = [[Store alloc]init];
-    adidas.storeName = @"Adidas";
-    adidas.storeNumber = @"1924";
-    adidas.itemAdded = [NSMutableArray array];
+    if(data == nil) {
+         storeLists = [[NSMutableArray alloc]init];
+    } else {
+         storeLists = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    }
     
-    Store *goyard = [[Store alloc]init];
-    goyard.storeName = @"Goyard";
-    goyard.storeNumber = @"1853";
-    goyard.itemAdded = [NSMutableArray array];
+    [self.tableView reloadData];
     
-    Store *louisVutton = [[Store alloc]init];
-    louisVutton.storeName = @"Louis Vutton";
-    louisVutton.storeNumber = @"1854";
-    louisVutton.itemAdded = [NSMutableArray array];
-    
-    storeLists = [NSMutableArray arrayWithObjects:nike,adidas,goyard,louisVutton, nil];
- 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -88,50 +75,17 @@
 //add Delegate Method
 -(void) addStoreListViewControllerDidAddStoreList:(Store *)storeList {
     [storeLists addObject:storeList];
+    
     [self.tableView reloadData];
+    NSUserDefaults *userDefaults= [NSUserDefaults standardUserDefaults];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:storeLists];
+    
+    [userDefaults setObject:data forKey:@"storeList"];
+    [userDefaults synchronize];
+}
+-(void)savedDataList {
+    
+   
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 @end

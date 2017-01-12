@@ -38,21 +38,6 @@
 
 -(void)tasks {
 
-    Task *title = [[Task alloc]init];
-    Task *title = [[Task alloc]init];
-    Task *title = [[Task alloc]init];
-    Task *title = [[Task alloc]init];
-    Task *title = [[Task alloc]init];
-    }
-
-
-
-
-
-
-
-
-
 
 /*
 #pragma mark - Navigation
