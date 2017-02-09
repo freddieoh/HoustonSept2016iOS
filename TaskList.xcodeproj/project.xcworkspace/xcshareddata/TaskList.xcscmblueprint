@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A60FB835D870A464014C0297DBC3290BBDB61329",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1B024F50E132EBE6A326B89DA753F1DCAA89299B" : 9223372036854775807,
+    "A60FB835D870A464014C0297DBC3290BBDB61329" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3DBD710F-F5C5-4BCB-AE11-3DFC527C8A0B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1B024F50E132EBE6A326B89DA753F1DCAA89299B" : "HoustonSept2016iOS\/TaskList\/TaskList\/",
+    "A60FB835D870A464014C0297DBC3290BBDB61329" : "HoustonSept2016iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TaskList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TaskList\/TaskList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/freddieoh\/TaskList.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B024F50E132EBE6A326B89DA753F1DCAA89299B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/freddieoh\/HoustonSept2016iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A60FB835D870A464014C0297DBC3290BBDB61329"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gbJ-yB-stv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vacation Collection View Controller-->
+        <scene sceneID="H2F-YK-jbS">
+            <objects>
+                <collectionViewController id="ae8-tR-AQb" customClass="VacationCollectionViewController" customModule="VacationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Zxh-Lo-uaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fZC-8l-ISl">
+                            <size key="itemSize" width="162" height="181"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VacationCell" id="O1U-hf-yxi" customClass="VacationCollectionViewCell" customModule="VacationApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="162" height="181"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="162" height="181"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" red="0.1764705882" green="0.4039215686" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ae8-tR-AQb" id="2M9-Ya-yUc"/>
+                            <outlet property="delegate" destination="ae8-tR-AQb" id="CZd-mC-Htr"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="kgy-Op-fAL">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ngg-GS-bdW">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="showImage" id="VnS-jb-RA0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqa-eu-Pp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392.80000000000001" y="-153.37331334332833"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="VacationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHR-Di-eUX">
+                                <rect key="frame" x="105" y="386" width="165" height="40"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="28"/>
+                                <state key="normal" title="CAMERA!!">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSj-KG-pJY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4j2-mY-ako">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4j2-mY-ako" secondAttribute="trailing" id="7Mc-7Y-nm5"/>
+                            <constraint firstItem="4j2-mY-ako" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7kJ-ns-FLl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HHR-Di-eUX" secondAttribute="bottom" constant="241" id="Cxu-bB-2Bh"/>
+                            <constraint firstItem="HHR-Di-eUX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="DAA-8k-3eM"/>
+                            <constraint firstItem="HHR-Di-eUX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="322" id="FL9-gI-Sde"/>
+                            <constraint firstItem="4j2-mY-ako" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Scv-Bb-r2G"/>
+                            <constraint firstItem="4j2-mY-ako" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vsq-nJ-q8s"/>
+                            <constraint firstItem="HHR-Di-eUX" firstAttribute="centerX" secondItem="4j2-mY-ako" secondAttribute="centerX" id="a5x-sQ-LkJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="HHR-Di-eUX" id="gt1-Fk-1D8"/>
+                        <outlet property="photoImageView" destination="4j2-mY-ako" id="mJp-P7-1GX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fNZ-mz-FGi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gbJ-yB-stv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sjt-ma-rZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ae8-tR-AQb" kind="relationship" relationship="rootViewController" id="LHt-rr-f6c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugJ-gl-8BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="128"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bUk-Pg-fX7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NFL Teams-->
+        <scene sceneID="EQz-o0-Dzl">
+            <objects>
+                <tableViewController id="W9a-Gk-d9F" customClass="TeamsTableViewController" customModule="UsingRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="hl5-RF-uj0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="TeamCell" textLabel="bGg-zW-wKn" imageView="a80-Wc-EYS" rowHeight="92" style="IBUITableViewCellStyleDefault" id="fjf-hB-0Kf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fjf-hB-0Kf" id="jxb-l4-Zku">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="91"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bGg-zW-wKn">
+                                            <rect key="frame" x="151" y="0.0" width="189" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="NFL_Logo.jpg" id="a80-Wc-EYS">
+                                            <rect key="frame" x="15" y="0.0" width="121" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="W9a-Gk-d9F" id="BNm-WJ-pXw"/>
+                            <outlet property="delegate" destination="W9a-Gk-d9F" id="X7v-BI-HjL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NFL Teams" id="Qz0-HS-9fz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="njm-a0-gEC">
+                            <connections>
+                                <segue destination="BtV-ci-SgE" kind="presentation" identifier="newTeamSegue" modalTransitionStyle="flipHorizontal" id="ksn-yK-XlJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hl5-RF-uj0" id="SXV-xn-KBW"/>
+                        <outlet property="teamsTableView" destination="hl5-RF-uj0" id="zau-e7-G5K"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMy-SV-sEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2992.8000000000002" y="188.45577211394306"/>
+        </scene>
+        <!--Add Team View Controller-->
+        <scene sceneID="4jH-IL-QsG">
+            <objects>
+                <viewController id="BtV-ci-SgE" customClass="AddTeamViewController" customModule="UsingRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ED-6y-i97"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbP-P2-APe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lyR-be-xie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NFL_Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sqb-4j-OsY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter NFL Team" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-ba-SZw">
+                                <rect key="frame" x="16" y="213" width="326" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWZ-c2-4hV">
+                                <rect key="frame" x="47" y="265" width="286" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTeamButtonPressed" destination="BtV-ci-SgE" eventType="touchUpInside" id="n0l-6f-ftm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sqb-4j-OsY" secondAttribute="trailing" id="L7G-U1-o05"/>
+                            <constraint firstItem="sqb-4j-OsY" firstAttribute="bottom" secondItem="nbP-P2-APe" secondAttribute="top" id="Ovu-1U-SIe"/>
+                            <constraint firstItem="sqb-4j-OsY" firstAttribute="top" secondItem="lyR-be-xie" secondAttribute="top" id="c5s-2v-BHg"/>
+                            <constraint firstItem="sqb-4j-OsY" firstAttribute="leading" secondItem="lyR-be-xie" secondAttribute="leading" id="v75-8g-ohk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addTeamTextField" destination="zkx-ba-SZw" id="Yf8-MV-K0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfZ-Om-UyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3856.8000000000002" y="187.55622188905548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gvO-8U-169">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bUk-Pg-fX7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1bo-dR-j3p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W9a-Gk-d9F" kind="relationship" relationship="rootViewController" id="fwg-ik-ihq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsp-NG-b4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.5999999999999" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NFL_Logo.jpg" width="1365" height="1024"/>
+    </resources>
+</document>
